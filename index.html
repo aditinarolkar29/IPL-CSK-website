@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSK Fan Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Chennai Super Kings 🦁</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#matches">Matches</a>
+      <a href="#players">Players</a>
+      <a href="#statistics">Statistics</a>
+      <a href="#news">News</a>
+      <a href="#fanzone">Fan Zone</a>
+    </nav>
+  </header>
+
+  <!-- Sections -->
+  <main>
+    <section id="home" class="section active">
+      <h2>Welcome to CSK Fan Hub</h2>
+      <p>Experience the roar of the lions 🦁. Explore matches, player profiles, news, stats, and engage with fans.</p>
+      <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202403/65f94a6aafe41-chennai-super-kings-owns-joburg-super-kings--a-professional-twenty20-franchise-cricket-team-formed-i-191849790-16x9.jpg?size=948:533" alt="Dhoni" class="hero-img">
+    </section>
+
+    <section id="matches" class="section">
+      <h2>Upcoming Matches</h2>
+      <ul>
+        <li>CSK vs MI – 10th April, Chennai</li>
+        <li>CSK vs RCB – 15th April, Bangalore</li>
+        <li>CSK vs KKR – 20th April, Kolkata</li>
+      </ul>
+    </section>
+
+    <section id="players" class="section">
+      <h2>Meet Our Players</h2>
+      <div class="player-grid">
+        <div class="player-card" data-player="dhoni">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvmW7MMnT6A3hbl6YPE6btuuNhvvXBtOO1dbWgAOEdK8DURwEA6fhMHHrGZo73cb5uLUU&usqp=CAU" alt="MS Dhoni">
+          <h3>MS Dhoni</h3>
+        </div>
+        <div class="player-card" data-player="jadeja">
+          <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/46.png" alt="Ravindra Jadeja">
+          <h3>Ravindra Jadeja</h3>
+        </div>
+        <div class="player-card" data-player="gaikwad">
+          <img src="https://gallery.chennaisuperkings.com/PROD/TEAM/Team4playerImgNoBg_1742633286428.png" alt="Ruturaj Gaikwad">
+          <h3>Ruturaj Gaikwad</h3>
+        </div>
+        <div class="player-card" data-player="rayudu">
+          <img src="https://documents.iplt20.com/ipl/IPLHeadshot2023/60.png" alt="Ambati Rayudu">
+          <h3>Ambati Rayudu</h3>
+        </div>
+        <div class="player-card" data-player="chahar">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjZaHtam2iZGL4T5_8H2r2tcWcy1G33_l9lQ&s" alt="Deepak Chahar">
+          <h3>Deepak Chahar</h3>
+        </div>
+        <div class="player-card" data-player="bravo">
+          <img src="https://documents.iplt20.com/playerheadshot/ipl/210/25.png" alt="Dwayne Bravo">
+          <h3>Dwayne Bravo</h3>
+        </div>
+      </div>
+      <!-- Player Modal -->
+      <div id="player-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="player-info"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="statistics" class="section">
+      <h2>Team Statistics</h2>
+      <p>🏆 IPL Titles: 5<br>🔥 Playoff Appearances: 12<br>💯 Win Percentage: 58%</p>
+    </section>
+
+    <section id="news" class="section">
+      <h2>Latest News</h2>
+      <ul>
+        <li>CSK gears up for IPL 2025 with new strategies.</li>
+        <li>Ruturaj Gaikwad appointed as vice-captain.</li>
+        <li>Dhoni confirms IPL 2025 will be his last season.</li>
+      </ul>
+    </section>
+
+    <section id="fanzone" class="section">
+      <h2>Fan Zone</h2>
+      <p>Vote for your favorite CSK star 🌟</p>
+      <button onclick="vote('MS Dhoni')">MS Dhoni</button>
+      <button onclick="vote('Jadeja')">Jadeja</button>
+      <button onclick="vote('Gaikwad')">Gaikwad</button>
+      <p id="vote-result"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CSK Fan Hub | Whistle Podu! 💛</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
