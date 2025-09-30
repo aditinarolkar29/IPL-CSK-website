@@ -1,0 +1,138 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Colors */
+:root {
+  --yellow: #FFF8CC;   /* lighter yellow */
+  --orange: #F15C19;
+  --blue: #00ADEF;
+  --darkblue: #1D418C;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--yellow);
+  color: #222;
+  overflow-x: hidden;
+  text-align: center;   /* 🔹 Center align everything */
+}
+
+/* Header */
+header {
+  background: var(--darkblue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+header h1 { 
+  font-size: 28px; 
+  width: 100%;
+  text-align: center;   /* Center header text */
+  margin-bottom: 10px;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover { color: var(--orange); }
+
+/* Sections */
+.section {
+  display: none;
+  min-height: 100vh;
+  padding: 40px;
+  animation: fadeIn 0.6s ease;
+}
+.section.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero */
+.hero-img {
+  width: 350px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Players */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;   /* Center player cards */
+}
+
+.player-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 220px;
+}
+.player-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.player-card:hover { transform: scale(1.05); }
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center; align-items: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+}
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Lists & Paragraphs */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background: var(--darkblue);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
